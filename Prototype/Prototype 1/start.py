@@ -45,22 +45,9 @@ def start_server():
     script_dir = Path(__file__).parent
     os.chdir(script_dir)
     
-    # Import and run the server
+    # Import the app from test_server to ensure consistency
     import uvicorn
-    from fastapi import FastAPI
-    from fastapi.responses import FileResponse
-    from fastapi.staticfiles import StaticFiles
-    from chatbot_module.routes import router as chatbot_router
-    
-    app = FastAPI(title="Insight Sphere AI")
-    
-    # Mount the chatbot router
-    app.include_router(chatbot_router, prefix="/api/v1")
-    
-    # Serve the HTML file
-    @app.get("/")
-    def root():
-        return FileResponse("index.html")
+    from test_server import app
     
     # Wait a moment for server to start, then open browser
     def open_browser():
