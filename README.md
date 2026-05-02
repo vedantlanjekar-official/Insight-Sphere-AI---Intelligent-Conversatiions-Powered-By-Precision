@@ -1,5 +1,7 @@
 # Insight Sphere AI
 
+<img width="1024" height="1024" alt="Logo" src="https://github.com/user-attachments/assets/b363d2dd-c84d-4532-a698-6fed32de07cb" />
+
 A modern, intelligent AI chatbot application built with FastAPI and Ollama, featuring a professional Gemini-inspired web interface. Insight Sphere AI provides an open, versatile AI assistant capable of handling any question or task across multiple domains.
 
 ![Insight Sphere AI](https://img.shields.io/badge/AI-Insight%20Sphere-blue)
